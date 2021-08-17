@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKIpHmfsL1Z_cTTa8WD0Ucn1BhhpOvPX3tXnQhOQ0pT6F9KKXcSPVD6B1QOYQgRg7zZE&usqp=CAU" />
+    <title>Challenges #02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <header class="bg-dark text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Challenge #02
+      </div>
+      <div class="container p-4 pb-0">
+        <section class="pb-4">
+          <p>Eai, beleza?</br>Aqui vão alguns Challenges feitos por Marlon Melchiades, com JavaScript puro!</br>Foi muito divertido fazer eles! </br> Esse é o #02 de #10. Veja e se divirta também! (vai que você ache algo útil aqui pra você!) ㋡</p>
+        </section>
+      </div>
+    </header>
+    <main class="container">
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 11
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Equação de segundo grau de novo?! A não! &#129300;</h5>
+            <p class="card-text">Equação de segundo grau nunca foi um cálculo legal de se fazer, convenhamos! </br> Melhor então deixar pro computador fazer o calculo, não é?! Manda ai os valores que eu vou te mostrar o valor de Delta pra você! </p>
+            <div class="input-group mb-3">
+              <input id="valorA-step11" type="text" placeholder="A" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorB-step11" type="text" placeholder="B" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="valorC-step11" type="text" placeholder="C" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step11" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step11"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Ainda bem que tem máquinas para facilitar nossa vida!
+          </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 12
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Vai um descontinho ai? &#128184;</h5>
+            <p class="card-text">Descontinho sempre é bem-vindo. Então, manda um preço pra eu calcular ai 5% de desconto.</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">R$</span>
+              <input id="preco-step12" type="text" placeholder="Valor" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step12" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step12"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Descontinho aí ficou bom pra você?
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 13
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hoje é seu dia de sorte! &#127808</h5>
+            <p class="card-text">Você ganhou um aumento de 15% no seu salário! Bem que podia ser verdade. Mas, se fosse, você gostaria de saber quanto ficaria? Coloque seu salário ai embaixo pra gente descobrir!</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">R$</span>
+              <input id="preco-step13" type="text" placeholder="Valor" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step13" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step13"></span>
+          </div>
+          <div class="card-footer text-muted">4
+            Melhorou né, pelo menos um pouco!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 14
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bora alugar um carro? &#127950;</h5>
+            <p class="card-text">Somos uma locadora de carro, e você alugou um carro conosco. Valores são de: "Diária à R$90 e R$0,20 por Km rodado". Coloque por quantos dias você alugou e quantos Km rodados, e calcularemos o total à pagar! </p>
+            <div class="input-group mb-3">
+              <input id="diaria-step14" type="text" placeholder="Dias alugados" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="kilometros-step14" type="text" placeholder="Km rodados" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step14" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step14"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Até que não ta caro alugar carro com a gente!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 15
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ta querendo um emprego? &#129333;</h5>
+            <p class="card-text">Olha, não sei se você vai gostar, mas a gente ta pagando R$25 por hora trabalhada e trabalhando 8 horas por dia! Ai você pode escolher quantos dias quer trabalhar. Só colocar a quantidade de dias que a gente te dá o valor que irá ganhar! </p>
+            <div class="input-group mb-3">
+              <input id="diaria-step15" type="text" placeholder="Dias trabalhados" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step15" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step15"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Eai, ta afim de trabalhar com a gente?
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 16
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Pare de fumar! &#128685;</h5>
+            <p class="card-text">Dizem os estudos que a cada cigarro fumado, você perde 10 minutos de sua vida. Me diz quantos cigarros você fuma por dia e a quantos anos que eu calculo quanto tempo de vida você já perdeu.</p>
+            <div class="input-group mb-3">
+              <input id="cigarros-step16" type="text" placeholder="Cigarros por dia" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="anos-step16" type="text" placeholder="Anos de fumo" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step16" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step16"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Acho que você não quer perder tudo isso da sua vida.
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 17
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Você está sendo multado! &#9888;</h5>
+            <p class="card-text">Você está numa via de màx. 80Km/h.</br>Se ultrapassar levará uma multa de R$80, que terá um acréscimo de R$5 a cada Km acima da velocidade permitida!</p>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Km/h</span>
+              <input id="velocidade-step17" type="text" placeholder="sua velocidade" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step17" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step17"></span>
+          </div>
+          <div class="card-footer text-muted">
+            É melhor andar na velocidade certa, heim?!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 18
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Já tirou seu título eleitoral? &#128199;</h5>
+            <p class="card-text">Todo mundo é obrigado a votar no Brasil, mas só após os 18 anos.</br> E você, já pode? quer descobrir?</p>
+            <div class="input-group mb-3">
+              <input id="data-step18" type="date" placeholder="Qual sua data de nascimento?" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step18" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step18"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Vote consciente!
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 19
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">De novo, professor(a)? &#129299;</h5>
+            <p class="card-text">Olá novamente, professor(a)!</br> Olha, vou precisar novamente das duas notas do alunoe do nome dele também. No final vou calcular a média dele e ver se ele passou de ano (lembrando que a nota de corte é 7.0).</p>
+            <input id="nome-step19" type="text" placeholder="Nome do aluno" class="form-control mb-2" aria-label="number">
+            <div class="input-group mb-3">
+              <input id="nota1-step19" type="text" placeholder="Nota 1" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <input id="nota2-step19" type="text" placeholder="Nota 2" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+            </div>
+            <button id="botao-step19" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            <span id="text-response-step19"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Melhor seus alunos estudarem mais! hehe
+          </div>
+        </div>
+      </section>
+      <section style="margin-top: 25px;">
+        <div class="card text-center">
+          <div class="card-header">
+            step 20
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">É par ou ímpar? &#128161;</h5>
+            <p class="card-text">Pra fechar esse challenge, você sabe se o número é ímpar ou par? Espero que sim! Mesmo assim, vamos ver se o número é par ou ímpar.</p>
+            <div class="input-group mb-3">
+              <input id="numero-step20" type="text" placeholder="Número qualquer" onkeyup="somenteNumeros(this);" class="form-control" aria-label="number">
+              <button id="botao-step20" class="btn btn-dark" type="button" id="button-addon2">Confirme</button>
+            </div>
+            <span id="text-response-step20"></span>
+          </div>
+          <div class="card-footer text-muted">
+            Se você não sabe diferenciar par e ímpar, melhor dar uma estudadinha!
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 25px;" class="bg-dark text-center text-white">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/marlonendjr" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://api.whatsapp.com/send?phone=+55(11)953459207&text=sua%20mensagem" role="button">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/marlon-melchiades/" role="button">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/MarlonMelchiades" role="button">
+            <i class="bi-github" role="img" aria-label="GitHub"></i>
+          </a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <i class="bi bi-envelope"></i> marlonendrigosilva@gmail.com
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
